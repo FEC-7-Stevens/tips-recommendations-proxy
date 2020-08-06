@@ -1,8 +1,8 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "author": "",
+  "name": "zagat-tips-recommendations-module",
+  "version": "1.0",
+  "description": "This module presents the tips and recommendations breakdown on a restaurant's Zagat listing.",
+  "author": "Meredith Myers",
   "license": "",
   "engines": {
     "node": ">=6.13.0"
