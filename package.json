@@ -1,17 +1,44 @@
 {
-  "name": "zagat-tips-recommendations-module",
-  "version": "1.0",
-  "description": "This module presents the tips and recommendations breakdown on a restaurant's Zagat listing.",
-  "author": "Meredith Myers",
-  "license": "",
-  "engines": {
-    "node": ">=6.13.0"
-  },
+  "name": "tips-recommendations-proxy",
+  "version": "1.0.0",
+  "description": "> Project description",
+  "private": true,
   "scripts": {
+    "build": "npx webpack --config webpack.config.js",
+    "lint": "eslint --ignore-path .gitignore .",
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FEC-7-Stevens/tips-recommendations-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FEC-7-Stevens/tips-recommendations-proxy/issues"
+  },
+  "homepage": "https://github.com/FEC-7-Stevens/tips-recommendations-proxy#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "babel-preset-airbnb": "^5.0.0",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "nodemon": "^2.0.4",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-  },
-  "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }

@@ -22,4 +22,10 @@ coverage
 
 # Compiled Dirs (http://nodejs.org/api/addons.html)
 build/
-dist/
+# dist/
+
+#Other modules#
+info-sidebar-service/
+photo-carousel-service/
+similar-restaurants-service/
+tips-recommendations-service/
