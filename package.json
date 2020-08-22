@@ -4,9 +4,21 @@
   "description": "> Project description",
   "private": true,
   "scripts": {
-    "build": "npx webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
     "lint": "eslint --ignore-path .gitignore .",
-    "start": "nodemon server/index.js",
+    "start-main": "nodemon server/index.js",
+    "jackson-schema": "mysql -u root -p < photo-carousel-service/server/schema.sql",
+    "jackson-seed": "node photo-carousel-service/server/seed.js",
+    "jackson-server": "nodemon photo-carousel-service/server/index.js",
+    "josh-schema": "mysql -u root -p < info-sidebar-service/schema.sql",
+    "josh-seed": "node info-sidebar-service/seedData.js",
+    "josh-server": "nodemon node info-sidebar-service/server/start.js",
+    "meredith-schema": "mysql -u root -p zagatTips < tips-recommendations-service/schema.sql",
+    "meredith-seed": "node tips-recommendations-service/database/seed.js",
+    "meredith-server": "nodemon tips-recommendations-service/server/index.js",
+    "cinzia-schema": "mysql -u root -p < similar-restaurants-service/database/schema.sql",
+    "cinzia-seed": "node similar-restaurants-service/seed.js",
+    "cinzia-server": "nodemon similar-restaurants-service/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +32,7 @@
   },
   "homepage": "https://github.com/FEC-7-Stevens/tips-recommendations-proxy#readme",
   "devDependencies": {
-    "@babel/core": "^7.11.1",
+    "@babel/core": "^7.11.4",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
@@ -38,7 +50,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "faker": "^4.1.0",
     "lodash": "^4.17.20",
+    "mysql": "^2.18.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
